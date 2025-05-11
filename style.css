@@ -258,10 +258,10 @@ body {
 .hero-aria,
 .hero-area-slids,
 .single-slider {
-    height: 100%;
+    height: 100vh;
     position: relative;
     z-index: 1;
-    background-position: center;
+    background-position: right;
     background-size: cover;
 }
 
@@ -282,13 +282,13 @@ body {
 .hero-area-slids .owl-stage-outer,
 .hero-area-slids .owl-stage,
 .hero-area-slids .owl-item {
-    height: 100%;
+    height: 100vh;
 }
 
 .slider-bg {
     height: 100%;
     width: 100%;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -325,38 +325,7 @@ body {
     margin-top: 30px;
 }
 
-/* Responsif untuk layar lebih kecil */
-@media (max-width: 1200px) {
-    .hero-content {
-        max-width: 50%; /* Membuat hero-content lebih lebar pada layar lebih kecil */
-    }
 
-    .hero-content h2 {
-        font-size: 8vw; /* Mengurangi ukuran font untuk layar lebih kecil */
-    }
-}
-
-/* Responsif pada layar lebih kecil dari 992px (tablet) */
-@media (max-width: 992px) {
-    .hero-content {
-        max-width: 60%; /* Lebih lebar di tablet */
-    }
-
-    .hero-content h2 {
-        font-size: 7vw; /* Ukuran font lebih kecil */
-    }
-}
-
-/* Responsif pada layar lebih kecil dari 768px (mobile) */
-@media (max-width: 768px) {
-    .hero-content {
-        max-width: 80%; /* Lebih lebar pada layar mobile */
-    }
-
-    .hero-content h2 {
-        font-size: 6vw; /* Ukuran font lebih kecil */
-    }
-}
 
 /*::::::::::::::::::::::::::::::::::::
    About Area
