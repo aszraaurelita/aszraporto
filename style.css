@@ -193,7 +193,7 @@ button:focus {
 .section-title h2 {
     text-transform: uppercase;
     position: relative;
-    font-size: 32px;
+    font-size: 2rem; /* Menggunakan rem agar lebih fleksibel */
     padding-bottom: 15px;
     margin-bottom: 15px;
     line-height: 1;
@@ -210,11 +210,61 @@ button:focus {
     background-color: #000;
 }
 
+/* Mengatur posisi garis sebelum dan sesudah judul */
 .section-title h2:before {
     left: auto;
     right: 50%;
-    background-color: #ffc900
+    background-color: #ffc900;
 }
+
+/* Responsif: Mengatur ukuran font dan margin berdasarkan lebar layar */
+@media (max-width: 1200px) {
+    .section-title h2 {
+        font-size: 2.5rem; /* Ukuran font lebih kecil pada layar besar */
+    }
+}
+
+@media (max-width: 992px) {
+    .section-title {
+        margin-bottom: 40px;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem; /* Ukuran font lebih kecil untuk tablet */
+    }
+
+    .section-title h2:before,
+    .section-title h2:after {
+        width: 40px; /* Mengurangi lebar garis */
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        margin-bottom: 30px;
+    }
+    
+    .section-title h2 {
+        font-size: 1.75rem; /* Ukuran font lebih kecil untuk smartphone */
+    }
+
+    .section-title h2:before,
+    .section-title h2:after {
+        width: 30px; /* Garis semakin kecil */
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 1.5rem; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .section-title h2:before,
+    .section-title h2:after {
+        width: 25px; /* Lebar garis lebih kecil pada layar sangat kecil */
+    }
+}
+
 
 /*::::::::::::::::::::::::::::::::::::
    Main Menu
