@@ -3,6 +3,9 @@
 html,
 body {
     height: 100%;
+    margin: 0;
+    padding: 0; 
+    max-width: 100vw; 
 }
 
 p {
@@ -611,6 +614,9 @@ body {
 /*::::::::::::::::::::::::::::::::::::
    Portfolio Section
 ::::::::::::::::::::::::::::::::::::*/
+.portfolio-area{
+    overflow-x: hidden;
+}
 
 .work-list {
     margin-bottom: 60px;
