@@ -258,15 +258,15 @@ body {
 .hero-aria,
 .hero-area-slids,
 .single-slider {
-    height: 100vh;
+    height: 100%;
     position: relative;
     z-index: 1;
-    background-position: right;
+    background-position: center;
     background-size: cover;
 }
 
 
-.hero-aria:after { 
+.hero-aria:after {
     position: absolute;
     content: '';
     left: 0;
@@ -282,7 +282,7 @@ body {
 .hero-area-slids .owl-stage-outer,
 .hero-area-slids .owl-stage,
 .hero-area-slids .owl-item {
-    height: 100vh;
+    height: 100%;
 }
 
 .slider-bg {
@@ -324,7 +324,6 @@ body {
 .hero-content .button {
     margin-top: 30px;
 }
-
 
 
 /*::::::::::::::::::::::::::::::::::::
